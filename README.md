@@ -16,6 +16,10 @@ Features
 - [ ] Supporting HTTP as a valid file source beside the currently and only supported "local filesystem".
 - [ ] Implementing a "Distributed Queue" engine to simplify the integration with the real world problems/apps.
 
+Downloads
+=========
+> go to the [releases page](https://github.com/alash3al/vidutils/releases).
+
 Thanks To
 ==========
 - [H.264 Video Encoding Guide](https://trac.ffmpeg.org/wiki/Encode/H.264)
