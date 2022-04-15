@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/alash3al/vidutils/ffmpeg"
+	"github.com/alash3al/vidutils/pkg/ffmpeg"
 	"github.com/urfave/cli/v2"
 )
 
