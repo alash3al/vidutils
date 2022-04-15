@@ -20,6 +20,13 @@ Downloads
 =========
 > go to the [releases page](https://github.com/alash3al/vidutils/releases).
 
+Usage
+=====
+> for now, execute the downloaded binary with the help flag example:
+```shell
+$ ./vidutils_linux_amd64 --help
+``
+
 Thanks To
 ==========
 - [H.264 Video Encoding Guide](https://trac.ffmpeg.org/wiki/Encode/H.264)
