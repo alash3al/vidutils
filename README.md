@@ -2,6 +2,10 @@ About
 ======
 > a very simple, tiny and intuitive ffmpeg wrapper with a cli interface for inspecting & transforming media files supported by the original ffmpeg software.
 
+Why
+===
+> I wanted to learn more about ffmpeg and dig deep into its use cases, so I tried to build a simple wrapper that is consdered a shortcut for ffmpeg.
+
 Features
 ========
 - [x] Inspecting a video file to get its info including (duration, size, thumbnail, ... etc).
@@ -11,10 +15,6 @@ Features
 - [ ] Supporting FTP as a valid file source/output beside the currently and only supported "local filesystem".
 - [ ] Supporting HTTP as a valid file source beside the currently and only supported "local filesystem".
 - [ ] Implementing a "Distributed Queue" engine to simplify the integration with the real world problems/apps.
-
-Why
-===
-> I wanted to learn more about ffmpeg and dig deep into its use cases, so I tried to build a simple wrapper that is consdered a shortcut for ffmpeg.
 
 Thanks To
 ==========
