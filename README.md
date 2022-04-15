@@ -22,7 +22,7 @@ Downloads
 
 Usage
 =====
-> for now, execute the downloaded binary with the help flag example:
+> for now, execute the downloaded binary with the `--help` flag, example:
 ```shell
 $ ./vidutils_linux_amd64 --help
 ```
