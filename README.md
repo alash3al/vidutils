@@ -10,11 +10,7 @@ Features
 ========
 - [x] Inspecting a video file to get its info including (duration, size, thumbnail, ... etc).
 - [x] Transforming a video file (converting, resizing and compressing).
-- [ ] Generating a HLS playlist from a video file.
-- [ ] Supporting S3 as a valid file source/output beside the currently and only supported "local filesystem".
-- [ ] Supporting FTP as a valid file source/output beside the currently and only supported "local filesystem".
-- [ ] Supporting HTTP as a valid file source beside the currently and only supported "local filesystem".
-- [ ] Implementing a "Distributed Queue" engine to simplify the integration with the real world problems/apps.
+- [x] Generating a HLS playlist from a video file.
 
 Downloads
 =========
@@ -36,3 +32,6 @@ Thanks To
 - [Video Quality – What is Video Bitrate(kbps), Pixels (p) & Aspect Ratios](https://www.vdocipher.com/blog/2020/09/video-quality-bitrate-pixels/)
 - [How do I reduze the size of a video to a target size?](https://unix.stackexchange.com/questions/520597/how-do-i-reduze-the-size-of-a-video-to-a-target-size?rq=1)
 - [Resize/Scale/Change Resolution of a Video using FFmpeg Easily](https://ottverse.com/change-resolution-resize-scale-video-using-ffmpeg/)
+- [How to consider bitrate, -maxrate and -bufsize of a video for web](https://superuser.com/questions/945413/how-to-consider-bitrate-maxrate-and-bufsize-of-a-video-for-web)
+- [How much data does YouTube actually use?](https://www.androidauthority.com/how-much-data-does-youtube-use-964560/)
+- [YouTube Audio Quality Bitrate](https://www.h3xed.com/web-and-internet/youtube-audio-quality-bitrate-240p-360p-480p-720p-1080p)

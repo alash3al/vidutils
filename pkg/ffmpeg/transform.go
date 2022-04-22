@@ -8,11 +8,9 @@ import (
 
 // TransformInput represents the input used to transform (compress, resize) a video
 type TransformInput struct {
-	Width          int64
-	Height         int64
-	QualityLevel   int64
+	OutputQuality
 	VideoCodec     string
-	BitRate        int64
+	FrameRate      int64
 	InputFilename  string
 	OutputFilename string
 }
@@ -33,11 +31,16 @@ func Transform(input *TransformInput) error {
 		input.Width = -1
 	}
 
+	if input.FrameRate < 1 {
+		input.FrameRate = 30
+	}
+
 	commandLine := fmt.Sprintf(
-		"ffmpeg -y -v error -hide_banner -i %s -vf scale=%d:%d",
+		"ffmpeg -max_error_rate 0.0 -y -v error -hide_banner -i %s -vf scale=%d:%d:force_original_aspect_ratio=decrease,fps=%d",
 		input.InputFilename,
 		input.Width,
 		input.Height,
+		input.FrameRate,
 	)
 	commandLineParts := strings.Split(commandLine, " ")
 
@@ -52,11 +55,14 @@ func Transform(input *TransformInput) error {
 		}
 
 		commandLineParts = append(commandLineParts, "-vcodec", lib)
-
 	}
 
-	if input.BitRate > 0 {
-		commandLineParts = append(commandLineParts, "-b", fmt.Sprintf("%dk", input.BitRate/1000))
+	if input.VideoBitRateKilo > 0 {
+		commandLineParts = append(commandLineParts, "-b:v", fmt.Sprintf("%dk", input.VideoBitRateKilo))
+	}
+
+	if input.AudioBitRateKilo > 0 {
+		commandLineParts = append(commandLineParts, "-b:a", fmt.Sprintf("%dk", input.AudioBitRateKilo))
 	}
 
 	commandLineParts = append(commandLineParts, input.OutputFilename)
