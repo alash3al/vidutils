@@ -12,6 +12,11 @@ Features
 - [x] Transforming a video file (converting, resizing and compressing).
 - [x] Generating a HLS playlist from a video file.
 
+Requirements
+============
+- `ffmpeg` command line
+- `ffprobe` command line
+
 Downloads
 =========
 > go to the [releases page](https://github.com/alash3al/vidutils/releases).
