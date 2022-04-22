@@ -2,3 +2,5 @@
 /build
 /example.txt
 /output
+*.log
+*.mbtree
