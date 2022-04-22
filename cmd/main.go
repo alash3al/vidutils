@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strings"
 
 	"github.com/alash3al/vidutils/pkg/ffmpeg"
 	"github.com/urfave/cli/v2"
@@ -160,6 +161,7 @@ func main() {
 			&cli.StringSliceFlag{
 				Name:     "quality-presets",
 				Aliases:  []string{"q"},
+				Usage:    "the required quality preset, available presets are: " + strings.Join(ffmpeg.QualityPresetsList, ","),
 				Required: true,
 			},
 		},
