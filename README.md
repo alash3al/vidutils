@@ -4,7 +4,7 @@ About
 
 Why
 ===
-> I wanted to learn more about ffmpeg and dig deep into its use cases, so I tried to build a simple wrapper that is consdered a shortcut for ffmpeg.
+> I wanted to learn more about `ffmpeg` and dig deep into its use cases, so I tried to build a simple wrapper that is considered a shortcut for ffmpeg.
 
 Features
 ========
@@ -19,11 +19,11 @@ Requirements
 
 Downloads
 =========
-> go to the [releases page](https://github.com/alash3al/vidutils/releases).
+> Go to the [releases page](https://github.com/alash3al/vidutils/releases).
 
 Usage
 =====
-> for now, execute the downloaded binary with the `--help` flag, example:
+> For now, execute the downloaded binary with the `--help` flag, for example:
 ```shell
 $ ./vidutils_linux_amd64 --help
 ```
